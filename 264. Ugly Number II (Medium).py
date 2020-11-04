@@ -1,4 +1,4 @@
-class Solution(object):    
+class Solution:    
     def nthUglyNumber(self, n):
 
         ugly_list = []
