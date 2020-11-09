@@ -21,10 +21,8 @@ class Solution:
         dp = [([0] * cl) for r in range(1, rw)]
 
         for i in range(1, rw):
-            for j in range(1, cl):
-            
+            for j in range(1, cl):            
                     if A[i] == B[j]:
-
                         dp[i][j] = dp[i-1][j-1] + 1
                     else:
                         dp[i][j] = max(dp[i][j-1], dp[i-1][j])
