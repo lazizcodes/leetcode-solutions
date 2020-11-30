@@ -1,4 +1,5 @@
-class Solution:
+# 1
+class Solution1:
     def isAnagram(self, s: str, t: str) -> bool:
         
         if len(s) != len(t): 
@@ -17,4 +18,9 @@ class Solution:
                 return False
             
         return True
+
+# 2
+class Solution2:
+    def isAnagram(self, s, t):
+        return collections.Counter(s) == collections.Counter(t)
             
